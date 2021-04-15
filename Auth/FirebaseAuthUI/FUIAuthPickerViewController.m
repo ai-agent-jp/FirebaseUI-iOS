@@ -124,7 +124,7 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
   
   CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
     
-  CGRect buttonContainerViewFrame = CGRectMake(10, 0, screenWidth - 20, buttonContainerViewHeight);
+    CGRect buttonContainerViewFrame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, buttonContainerViewHeight);
   _buttonContainerView = [[UIView alloc] initWithFrame:buttonContainerViewFrame];
   if (_scrollView) {
     [_contentView addSubview:_buttonContainerView];
@@ -134,7 +134,7 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
     [self.view addSubview:_buttonContainerView];
   }
 
-  CGRect buttonFrame = CGRectMake(0, 0, kSignInButtonWidth, kSignInButtonHeight);
+  CGRect buttonFrame = CGRectMake(15, 0, [[UIScreen mainScreen] bounds].size.width - 30, kSignInButtonHeight);
   for (id<FUIAuthProvider> providerUI in self.authUI.providers) {
     UIButton *providerButton =
         [[FUIAuthSignInButton alloc] initWithFrame:buttonFrame providerUI:providerUI];
@@ -164,7 +164,7 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
     CGFloat centerY = CGRectGetHeight(self.view.bounds) - distanceFromCenterToBottom;
     // Compensate for bounds adjustment if any.
     centerY += self.view.bounds.origin.y;
-    _buttonContainerView.center = CGPointMake(self.view.center.x, centerY);
+    _buttonContainerView.center = CGPointMake(self.view.center.x, centerY / 2);
     return;
   }
 
