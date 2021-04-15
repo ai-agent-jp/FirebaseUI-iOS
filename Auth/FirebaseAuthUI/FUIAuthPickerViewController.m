@@ -121,7 +121,10 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
 
   CGFloat buttonContainerViewHeight =
       kSignInButtonHeight * numberOfButtons + kSignInButtonVerticalMargin * (numberOfButtons);
-  CGRect buttonContainerViewFrame = CGRectMake(0, 0, kSignInButtonWidth, buttonContainerViewHeight);
+  
+  CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    
+  CGRect buttonContainerViewFrame = CGRectMake(10, 0, screenWidth - 20, buttonContainerViewHeight);
   _buttonContainerView = [[UIView alloc] initWithFrame:buttonContainerViewFrame];
   if (_scrollView) {
     [_contentView addSubview:_buttonContainerView];
