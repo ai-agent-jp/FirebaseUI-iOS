@@ -163,8 +163,8 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
         CGRectGetHeight(_buttonContainerView.frame) / 2.0f + kButtonContainerBottomMargin + kTOSViewBottomMargin;
     CGFloat centerY = CGRectGetHeight(self.view.bounds) - distanceFromCenterToBottom;
     // Compensate for bounds adjustment if any.
-    centerY += self.view.bounds.origin.y;
-//    _buttonContainerView.center = CGPointMake(self.view.center.x, centerY / 2);
+//    centerY += self.view.bounds.origin.y;
+    _buttonContainerView.center = CGPointMake(self.view.center.x, 300);
     return;
   }
 
