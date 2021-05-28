@@ -138,7 +138,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (FUIOAuth *)twitterAuthProvider {
   return [[FUIOAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]
                                providerID:@"twitter.com"
-                          buttonLabelText:@"Twitter でログイン"
+                          buttonLabelText:@"Twitter でサインイン"
                                 shortName:@"Twitter"
                               buttonColor:[UIColor colorWithRed:71.0f/255.0f
                                                           green:154.0f/255.0f
@@ -154,7 +154,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (FUIOAuth *)githubAuthProvider {
   return [[FUIOAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]
                                providerID:@"github.com"
-                          buttonLabelText:@"GitHub でログイン"
+                          buttonLabelText:@"GitHub でサインイン"
                                 shortName:@"GitHub"
                               buttonColor:[UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0]
                                 iconImage:[FUIAuthUtils imageNamed:@"ic_github"
@@ -167,7 +167,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (FUIOAuth *)microsoftAuthProvider {
   return [[FUIOAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]
                                providerID:@"microsoft.com"
-                          buttonLabelText:@"Microsoft でログイン"
+                          buttonLabelText:@"Microsoft でサインイン"
                                 shortName:@"Microsoft"
                               buttonColor:[UIColor colorWithRed:.18 green:.18 blue:.18 alpha:1.0]
                                 iconImage:[FUIAuthUtils imageNamed:@"ic_microsoft"
@@ -180,7 +180,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (FUIOAuth *)yahooAuthProvider {
   return [[FUIOAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]
                                providerID:@"yahoo.com"
-                          buttonLabelText:@"Yahoo でログイン"
+                          buttonLabelText:@"Yahoo でサインイン"
                                 shortName:@"Yahoo"
                               buttonColor:[UIColor colorWithRed:.45 green:.05 blue:.62 alpha:1.0]
                                 iconImage:[FUIAuthUtils imageNamed:@"ic_yahoo"
@@ -213,7 +213,7 @@ NS_ASSUME_NONNULL_BEGIN
   }
   FUIOAuth *provider = [[FUIOAuth alloc] initWithAuthUI:[FUIAuth defaultAuthUI]
                                              providerID:@"apple.com"
-                                        buttonLabelText:@"Apple でログイン"
+                                        buttonLabelText:@"Apple でサインイン"
                                               shortName:@"Apple"
                                             buttonColor:buttonColor
                                               iconImage:iconImage
