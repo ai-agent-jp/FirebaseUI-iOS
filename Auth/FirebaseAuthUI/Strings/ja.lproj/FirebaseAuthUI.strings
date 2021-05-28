@@ -20,7 +20,7 @@
 "ProviderUsedPreviouslyMessage" = "%@ をすでに使用しています。%@ でログインして続行してください。";
 
 /* Title for sign in screen and sign in button. */
-"SignInTitle" = "ログイン";
+"SignInTitle" = "サインイン";
 
 /* Password text field placeholder. */
 "EnterYourPassword" = "パスワードを入力";
