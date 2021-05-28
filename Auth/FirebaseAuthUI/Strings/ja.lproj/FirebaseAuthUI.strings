@@ -2,7 +2,7 @@
 "AuthPickerTitle" = "ようこそ";
 
 /* Sign in with email button label. Use short/abbreviated translation for 'email' which is less than 15 chars. */
-"SignInWithEmail" = "メールアドレスでログイン";
+"SignInWithEmail" = "メールアドレスでサインイン";
 
 /* Title for email entry screen, email text field placeholder. Use short/abbreviated translation for 'email' which is less than 15 chars. */
 "EnterYourEmail" = "メールアドレスを入力してください";
@@ -230,7 +230,7 @@
 "ProviderTitleTwitter" = "Twitter";
 
 /* Sign in with provider button label. */
-"SignInWithProvider" = "%@ でログイン";
+"SignInWithProvider" = "%@ でサインイン";
 
 /* Placeholder of input cell when user changes name. */
 "PlaceholderEnterName" = "名前を入力";
